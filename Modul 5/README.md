@@ -121,3 +121,4 @@ Melanjutkan halaman Ramadan dari Modul 4 dengan menambahkan button interaktif ya
 
 ## Hasil
 ![Hasil Halaman Ramadan THR](screenshot-modul-5.png)
+![Modal THR](screenshot-modul-5-modal.png)
