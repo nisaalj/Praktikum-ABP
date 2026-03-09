@@ -10,7 +10,7 @@
 
 ---
 
-<img src="Logo_Telkom_University_potrait.png" width="200">
+<img src="Logo_Telkom_University_potraitt.png" width="200">
 
 ---
 
