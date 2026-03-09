@@ -1,6 +1,72 @@
- # Kode Program
+<div align="center">
 
-# index.html
+# LAPORAN PRAKTIKUM
+# APLIKASI BERBASIS PLATFORM
+
+---
+
+## MODUL 5
+## HALAMAN RAMADAN DENGAN MODAL THR
+
+---
+
+<img src="Logo_Telkom_University_potrait.png" width="200">
+
+---
+
+**Disusun Oleh :**
+
+**ANNISA AL JAUHAR**
+
+**2311102014**
+
+**S1 IF-11-REG01**
+
+---
+
+**Dosen Pengampu :**
+
+Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom
+
+---
+
+**PROGRAM STUDI S1 INFORMATIKA**
+
+**FAKULTAS INFORMATIKA**
+
+**UNIVERSITAS TELKOM PURWOKERTO**
+
+**2025/2026**
+
+</div>
+
+---
+
+## 1. Dasar Teori
+
+Bootstrap merupakan framework CSS open-source yang menyediakan berbagai komponen siap pakai untuk membangun tampilan website yang responsif. Pada modul ini, Bootstrap digunakan secara lebih lanjut dengan memanfaatkan komponen interaktif yaitu **Modal** dan **Button**.
+
+**Modal** adalah komponen Bootstrap yang menampilkan konten di atas halaman utama dalam bentuk jendela pop-up. Modal berguna untuk menampilkan informasi penting, konfirmasi, atau konten tambahan tanpa harus berpindah halaman. Komponen modal terdiri dari beberapa bagian yaitu `modal`, `modal-dialog`, `modal-content`, `modal-header`, `modal-body`, dan `modal-footer`.
+
+Untuk menghubungkan tombol dengan modal, Bootstrap menggunakan atribut data khusus yaitu `data-bs-toggle="modal"` dan `data-bs-target="#idModal"` pada elemen tombol. Atribut `data-bs-dismiss="modal"` digunakan pada tombol di dalam modal untuk menutupnya.
+
+**Button** merupakan komponen Bootstrap yang digunakan untuk membuat tombol interaktif. Bootstrap menyediakan berbagai class untuk mengatur tampilan tombol seperti `btn`, `btn-warning`, `btn-lg`, `fw-bold`, `px-5`, dan `py-3`.
+
+Animasi `modal fade` pada class modal membuat modal muncul dan menghilang dengan efek fade in dan fade out yang halus. Class `modal-dialog-centered` digunakan untuk memposisikan modal tepat di tengah layar secara vertikal.
+
+---
+
+## 2. Penjelasan Kode
+
+Berikut adalah implementasi halaman Ramadan dengan tambahan tombol interaktif yang menampilkan modal THR menggunakan Bootstrap 5.
+
+### Kode HTML (index.html)
+```html
+<!-- 
+    Nama  : Annisa Al Jauhar
+    NIM   : 2311102014
+    Kelas : S1 IF-11-REG01
+-->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -60,6 +126,7 @@
             </div>
         </div>
 
+        <!-- Tombol THR -->
         <div class="mt-5">
             <button class="btn btn-warning btn-lg fw-bold px-5 py-3 fs-5" data-bs-toggle="modal" data-bs-target="#modalTHR">
                 🎁 Klik untuk dapat THR!
@@ -73,6 +140,7 @@
 
     </div>
 
+    <!-- Modal THR -->
     <div class="modal fade" id="modalTHR" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-dark text-white border border-warning">
@@ -95,30 +163,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+```
 
-# Modul 5 - Halaman Ramadan dengan Modal THR
+### Penjelasan Kode
 
-# Deskripsi
-Melanjutkan halaman Ramadan dari Modul 4 dengan menambahkan button interaktif yang ketika diklik akan menampilkan modal berisi ucapan THR menggunakan Bootstrap 5.
-- HTML
-- Bootstrap 5
-- Sedikit Native CSS (hanya untuk ukuran emoji)
+Tombol THR menggunakan class `btn btn-warning btn-lg fw-bold px-5 py-3 fs-5` untuk tampilan tombol besar berwarna kuning. Atribut `data-bs-toggle="modal"` dan `data-bs-target="#modalTHR"` menghubungkan tombol ke modal dengan id `modalTHR` sehingga ketika tombol diklik, modal otomatis muncul tanpa perlu menulis JavaScript sama sekali.
 
-# Fitur
-- Semua tampilan dari Modul 4 tetap ada
-- Tombol Klik untuk Surprise di tengah halaman
-- Modal THR yang muncul ketika tombol diklik
-- Tombol Alhamdulillah untuk menutup modal
+Modal didefinisikan dengan class `modal fade` yang memberikan efek animasi fade saat muncul dan menghilang. Class `modal-dialog-centered` memposisikan modal tepat di tengah layar. Modal content menggunakan `bg-dark text-white border border-warning` untuk tampilan gelap dengan border berwarna emas sesuai tema Ramadan.
 
-# Penjelasan Komponen Bootstrap yang Digunakan
-- btn, btn-warning, btn-lg untuk styling tombol
-- data-bs-toggle dan data-bs-target untuk menghubungkan tombol ke modal
-- modal, modal-dialog, modal-dialog-centered untuk komponen modal
-- modal-content, modal-header, modal-body, modal-footer untuk struktur modal
-- modal fade untuk efek animasi modal muncul
-- border border-warning untuk border berwarna emas pada modal
-- data-bs-dismiss untuk tombol menutup modal
+Bagian `modal-header` menampilkan judul selamat, `modal-body` berisi emoji uang, ucapan THR, dan doa, sedangkan `modal-footer` berisi tombol penutup dengan atribut `data-bs-dismiss="modal"` yang menutup modal ketika diklik.
 
-## Hasil
-![Hasil Halaman Ramadan THR](screenshot-modul-5.png)
+---
+
+## 3. Hasil
+
+### Tampilan Halaman Utama
+![Hasil Halaman Ramadan](screenshot-modul-5.png)
+
+### Tampilan Modal THR
 ![Modal THR](screenshot-modul-5-modal.png)
+
+---
+
+<div align="center">
+
+</div>
