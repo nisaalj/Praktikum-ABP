@@ -133,7 +133,7 @@ Animasi `@keyframes goyang` mendefinisikan gerakan dari `rotate(-10deg)` ke `rot
 
 ## 3. Hasil
 
-![Hasil Halaman Imlek](screenshot-modul-3.png)
+![Hasil Halaman Imlek](screenshot-modul--3.png)
 
 ---
 
